@@ -8,7 +8,7 @@ const DropDowns = (title) => {
     'Kitchen',
     'Special nutrition',
     'Baby',
-    'Pharmacy',
+    'Pharmacy'
   ];
   const newArray = ulTitles.map((item) => {
     const h3 = document.createElement('h3');

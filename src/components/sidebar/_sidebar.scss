@@ -1,0 +1,36 @@
+.sidebar {
+	&__title {
+		@include font(18px, 600, 27px);
+	}
+	&__list {
+		margin: 16px 0 48px;
+	}
+	&__item {
+		margin-top: 12px;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	&__link {
+		@include font(14px, 400, 19px, $font-openSans);
+		color: $color-green;
+		text-decoration: underline;
+	}
+	&__btn {
+		@include font(16px, 700, 22px);
+		display: inline-flex;
+		align-items: center;
+		background-color: $color-gray;
+		padding: 12px 22px 12px 16px;
+		border-radius: 12px;
+		color: $color-black;
+		transition: 0.2s;
+		span {
+			margin-left: 12px;
+			@include font(18px, 700, 22px);
+		}
+		&:active {
+			transform: scale(0.95);
+		}
+	}
+}

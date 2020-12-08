@@ -60,4 +60,4 @@ const Header = () => {
   headerBottom();
   return tagHeader;
 };
-Header();
+export default Header;
