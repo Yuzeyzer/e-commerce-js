@@ -4,8 +4,12 @@
 	box-sizing: border-box;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 body {
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -16,7 +20,6 @@ body {
 li {
 	list-style: none;
 }
-
 
 a {
 	display: inline-block;
@@ -38,6 +41,13 @@ img {
 .col-3 {
 	width: 25%;
 }
+.col-4 {
+	width: 33.33%;
+}
+.col-6 {
+	width: 50%;
+}
+
 .col-9 {
 	width: 75%;
 }

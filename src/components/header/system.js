@@ -1,7 +1,9 @@
 const System = () => {
   const div = document.createElement('div');
-  const ul = document.createElement('ul');
-  ul.className = 'system__list';
+	const ul = document.createElement('ul');
+	
+	ul.className = 'system__list';
+	
   ul.innerHTML = `
 	<li class="system__item">
 		<a href="">
