@@ -54,16 +54,15 @@
 }
 
 .product {
-	padding: 16px;
+	padding: 50px 16px;
 	&__row {
-		margin: -16px;
+		margin: -50px -16px;
 	}
 	&__item {
 		position: relative;
 		padding: 16px;
 		border-radius: 12px;
 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
-		min-height: 100%;
 	}
 	&__image {
 		border-radius: 12px;
@@ -77,6 +76,11 @@
 		@include font(12px, 500, 16px, $font-openSans);
 		margin-bottom: 16px;
 		color: #575757;
+		height: 35px;
+		cursor: pointer;
+		&.is-active {
+			height: auto;
+		}
 	}
 
 	&__price {

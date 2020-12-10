@@ -15,7 +15,10 @@ const Hero = () => {
 			<div class="hero__content row col-9 banner__row">${Banner(img1)}${Banner(img2)}</div>
 		</div>
 		<div class="row hero__row">
-		${Sidebar(menuData[1].title, menuData[1].listItems, menuData[1].btnText)}
+			<div class="col-3">
+				${Sidebar(menuData[1].title, menuData[1].listItems, menuData[1].btnText, '')}
+				${Sidebar(menuData[1].title, menuData[1].listItems, menuData[1].btnText, 'pt-120')}
+			</div>
 			<div class="hero__content row col-9 product__row">
 				${products.map((item) => ProductCard(item)).join('')}
 			</div>

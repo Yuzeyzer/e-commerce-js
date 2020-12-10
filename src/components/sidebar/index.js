@@ -1,7 +1,7 @@
-const Sidebar = (title, listItems, buttonText) => {
+const Sidebar = (title, listItems, buttonText, className = 'col-3') => {
   const aside = document.createElement('aside');
 
-  aside.className = `hero__sidebar sidebar col-3`;
+  aside.className = `hero__sidebar sidebar ${className}`;
 
   aside.innerHTML = `
 		<h3 class="sidebar__title">${title}</h3>
