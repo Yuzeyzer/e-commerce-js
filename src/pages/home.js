@@ -1,5 +1,6 @@
 import Hero from '../components/hero/index.js';
 import Reviews from '../components/reviews/index.js';
+import Headline from '../components/headline/index.js';
 import { reviewsData } from '../components/reviews/const.js';
 
 const Home = () => {
@@ -7,7 +8,8 @@ const Home = () => {
 
   homePage.innerHTML = `
   ${Hero}
-  ${Reviews(reviewsData.map((item) => item))}
+  ${Reviews(reviewsData)}
+  ${Headline()}
 	`;
 
   return homePage;

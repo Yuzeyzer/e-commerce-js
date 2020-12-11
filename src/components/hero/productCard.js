@@ -1,4 +1,4 @@
-const ProductCard = (item) => {
+const ProductCard = (item, className = 'col-4') => {
   const div = document.createElement('div');
   const divItem = div.cloneNode();
   const img = document.createElement('img');
@@ -10,7 +10,7 @@ const ProductCard = (item) => {
   const spanDiscount = span.cloneNode();
   const spanOldPrice = span.cloneNode();
 
-  div.className = 'col-4 product';
+  div.className = `${className} product`;
   divItem.className = 'product__item';
   img.className = 'product__image';
   h3.className = 'product__title';

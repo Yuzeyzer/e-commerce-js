@@ -1,11 +1,13 @@
 .reviews {
 	position: relative;
+	z-index: 10;
+	padding-bottom: 65px;
 	&::before {
 		content: "";
 		position: absolute;
-		left: 0;
+		left: -20px;
 		top: 0;
-		z-index: 111111;
+		z-index: 2;
 		height: 100%;
 		width: 20px;
 		background-color: rgba(255, 255, 255, 0.8);
@@ -14,13 +16,50 @@
 	&::after {
 		content: "";
 		position: absolute;
-		right: 0;
+		right: -20px;
 		top: 0;
-		z-index: 111111;
+		z-index: 3;
 		height: 100%;
 		width: 20px;
 		background-color: rgba(255, 255, 255, 0.8);
 		box-shadow: 0 0 20px 20px rgba(255, 255, 255, 0.8);
+	}
+	.swiper-container {
+		padding: 25px 0;
+	}
+	.swiper-button-prev,
+	.swiper-button-next {
+		position: absolute;
+		z-index: 10;
+		background: #151515 none;
+		box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+		border-radius: 12px;
+		outline: none;
+		&::after {
+			content: "";
+			background: url("../images/slider-arrow.svg") center no-repeat;
+			width: 6px;
+			height: 12px;
+		}
+	}
+	.swiper-button-prev {
+		left: 0;
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+	.swiper-button-next {
+		right: 0;
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		&::after {
+			transform: rotate(180deg);
+		}
+	}
+	&__title {
+		@include font(18px, 600, 27px);
+		margin-bottom: 40px;
+		margin-left: 45px;
+		color: #151515;
 	}
 	&__row {
 		flex-wrap: nowrap;
@@ -42,6 +81,7 @@
 		color: #a9a9a9;
 	}
 	&__image {
+		object-fit: cover;
 		width: 48px;
 		height: 48px;
 		border-radius: 50%;
