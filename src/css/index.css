@@ -48,6 +48,10 @@ img {
   width: 33.33%;
 }
 
+.col-5 {
+  width: 41.66%;
+}
+
 .col-6 {
   width: 50%;
 }
@@ -663,4 +667,95 @@ img {
   width: 48px;
   height: 48px;
   border-radius: 50%;
+}
+
+.blog {
+  padding-top: 70px;
+  padding-bottom: 65px;
+}
+
+.blog__title {
+  font-size: 18px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  line-height: 27px;
+  font-style: normal;
+  color: #151515;
+  margin-bottom: 35px;
+}
+
+.blog .tips {
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "Poppins", sans-serif;
+  line-height: 18px;
+  font-style: normal;
+  color: #6a983c;
+  background: #f4f8ec;
+  border-radius: 12px;
+  padding: 0 8px;
+}
+
+.big-post__tips {
+  position: absolute;
+  left: 24px;
+  top: 24px;
+}
+
+.big-post__item {
+  position: relative;
+  padding: 24px;
+  min-height: 400px;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.big-post__item::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+}
+
+.big-post__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 400px;
+  z-index: -2;
+}
+
+.big-post__title {
+  color: #fff;
+  margin-bottom: 8px;
+}
+
+.big-post__avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.big-post__author, .big-post__date {
+  font-size: 12px;
+  font-weight: 400;
+  font-family: "Open Sans", sans-serif, sans-serif;
+  line-height: 16px;
+  font-style: normal;
+  color: #fff;
+}
+
+.big-post__author {
+  margin: 0 16px 0 8px;
+}
+
+.big-post__row {
+  align-items: center;
 }

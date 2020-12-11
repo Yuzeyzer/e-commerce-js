@@ -17,7 +17,7 @@ const DropDowns = (title) => {
       <img src="./src/images/icon-arrow-down.svg" alt="icon-arrow-down"/>
 			<ul class="dropdown__list">
 				<li>${item}</li>
-				<li>${item}</li>
+				<li><a class="vegatables" href="#">${item}</a></li>
 				<li>${item}</li>
 				<li>${item}</li>
 				<li>${item}</li>
